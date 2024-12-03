@@ -1,0 +1,54 @@
+### To-Do List
+
+#### 1. Weather App Enhancements
+[x] Display forecasts in a card-based layout.
+[x] Add 5-day/3-hour weather forecast using OpenWeatherMap API.
+[ ] Highlight the current day's weather.
+[ ] Add animations for transitions (e.g., loading or switching weather data).
+
+#### 2. CRUD for Favorite Cities
+[ ] Create functionality to save favorite cities.
+    [ ] Add city to the favorites list (Create).
+    [ ] View saved cities with current weather (Read).
+    [ ] Edit city names or priorities (Update).
+    [ ] Remove cities from the list (Delete).
+[ ] Set up Laravel backend:
+    [ ] Create `favorites` table (columns: `id`, `city_name`, `user_id`).
+    [ ] Add routes for CRUD operations.
+    [ ] Test CRUD functionality with the React frontend.
+
+#### 3. Portfolio Presentation
+[ ] Create landing page with:
+    [ ] Hero section (name, tagline, and CTA button).
+[ ] Add a "Projects" section:
+    [ ] Highlight Weather App and CRUD app.
+    [ ] Add description, live demo link, and GitHub link for each project.
+[ ] Add an "About Me" section:
+    [ ] Write a short bio.
+    [ ] List skills and tech stack (icons/logos).
+[ ] Add a "Contact" form:
+    [ ] Name, email, and message fields.
+    [ ] Add links to socials (LinkedIn, GitHub, etc.).
+
+#### 4. Chess Game (Turn-Based Asynchronous)
+[ ] Set up the chessboard on the frontend:
+    [ ] Use a library like `react-chessboard`.
+    [ ] Display current game state and last move.
+[ ] Backend functionality in Laravel:
+    [ ] Save chessboard state in `game_state` table.
+    [ ] Record moves in `moves` table (`id`, `player_name`, `move`, `timestamp`).
+    [ ] Validate moves (basic chess rules).
+    [ ] Ensure only one move every 6 hours.
+[ ] Anti-spam:
+    [ ] Limit moves to one per player per game.
+    [ ] Implement IP or session-based checks.
+
+#### 5. Deployment
+[ ] Deploy the React app to a hosting service (e.g., Netlify, Vercel).
+[ ] Deploy the Laravel backend to a server (e.g., Laravel Forge, Heroku).
+[ ] Test the full-stack app in production.
+
+#### 6. Bonus Features (Optional)
+[ ] Add a weather alert system for extreme weather conditions.
+[ ] Allow users to switch between metric and imperial units (Celsius/Fahrenheit).
+[ ] Add a settings page for customizing weather preferences.
