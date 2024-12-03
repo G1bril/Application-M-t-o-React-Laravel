@@ -3,7 +3,7 @@
 #### 1. Weather App Enhancements
 [x] Display forecasts in a card-based layout.
 [x] Add 5-day/3-hour weather forecast using OpenWeatherMap API.
-[ ] Highlight the current day's weather.
+[ ] Show the city selected and use animated weather icons.
 [ ] Add animations for transitions (e.g., loading or switching weather data).
 
 #### 2. CRUD for Favorite Cities

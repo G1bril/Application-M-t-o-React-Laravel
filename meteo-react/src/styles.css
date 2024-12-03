@@ -285,8 +285,10 @@ img {
 }
 
 .forecast-details img {
-    max-width: 80px; /* Larger weather icon */
+    max-width: 80px;
+    max-height: 80px; /* Larger weather icon */
     height: auto;
+    width: auto;
 }
 
 .forecast-details .temp {
