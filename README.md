@@ -1,4 +1,4 @@
-# 🌤️ Ma Météo - React & Laravel  
+# 🌤️ Ma Météo - React & Laravel (via ViteJS)
 Nouvelle version du projet avec React pour le front-end et Laravel pour le back-end.  
 
 ## 🚀 Fonctionnalités  
