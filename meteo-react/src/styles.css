@@ -269,7 +269,27 @@ img {
     width: 280px; /* Fixed width for cards */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    animation: slideIn 0.5s ease forwards; /* Apply the animation */
+    opacity: 0; /* Start hidden */
+    transform: translateX(50px); /* Start below the view */
 }
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(50px); /* Start below the view */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Slide into position */
+    }
+}
+
+.forecast-card.visible {
+    opacity: 1; /* Become visible */
+    transform: translateY(0); /* Slide into position */
+}
+
 
 .forecast-card h3 {
     font-size: 20px;

@@ -59,7 +59,7 @@ const Home = () => {
       <h1>Prévision météo</h1>
       <div className="iconIMG">
         <img
-          src="https://cdn-icons-png.flaticon.com/512/552/552448.png"
+          src="https://cdn.discordapp.com/attachments/1091160198934188052/1313934442804416672/output-onlinegiftools.gif?ex=6751f04e&is=67509ece&hm=b82b805f308085d3e7105ba478b0aa536fe46e70e0160b84511328e8a72b2a68&"
           alt="icone meteo"
         />
       </div>
@@ -78,18 +78,21 @@ const Home = () => {
       {error && <p className="error">{error}</p>}
 
       <div className="white-box">
+        <p>Prévision météo <b>{location}</b> à 3 jours</p>
         {forecast.length > 0 && (
           <div className="weather-info">
-            {forecast.map((forecastItem, index) => (
-              <WeatherCard
-                key={index}
-                date={forecastItem.date}
-                temp={forecastItem.temp}
-                description={forecastItem.description}
-                icon={forecastItem.icon}
-              />
-            ))}
-          </div>
+          {forecast.map((forecastItem, index) => (
+            <WeatherCard
+              key={index}
+              date={forecastItem.date}
+              temp={forecastItem.temp}
+              description={forecastItem.description}
+              icon={forecastItem.icon}
+              delay={index * 200} // Delay each card by 200ms
+            />
+          ))}
+        </div>
+        
         )}
       </div>
     </div>
