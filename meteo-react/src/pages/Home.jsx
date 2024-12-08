@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { fetchWeather, getWeatherIcon } from "../api/weather";
 import WeatherCard from "../components/WeatherCard"; // Import the WeatherCard component
 
@@ -71,6 +71,7 @@ const Home = () => {
         value={location}
         onChange={(e) => setLocation(e.target.value)}
       />
+
       <button id="searchButton" onClick={handleSearch}>
         Rechercher
       </button>
